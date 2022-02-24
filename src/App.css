@@ -9,7 +9,23 @@ App {
     padding: 1rem 1rem;
 }
 
+.primary-heading{
+	font-size: 2rem;
+    text-align: left;
+    margin: 1rem 1rem;
+    padding: 1rem 1rem;
+
+}
+
 .color-picker{
     margin: 1rem 1rem;
     padding: 1rem 1rem;
+}
+
+.flex-grid{
+	display:flex;
+}
+
+.col{
+	flex: 1;
 }
