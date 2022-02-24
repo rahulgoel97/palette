@@ -29,3 +29,54 @@ App {
 .col{
 	flex: 1;
 }
+
+.text1{
+    font-size: 5.5rem;
+    text-align: left;
+    margin: 0rem 2.5rem;
+ 
+
+}
+
+.text2{
+    font-size: 5rem;
+    text-align: left;
+    margin: 0rem 2.5rem;
+
+
+}
+
+.text3{
+    font-size: 4.5rem;
+    text-align: left;
+    margin: 0rem 2.5rem;
+
+
+}
+
+.text4{
+    font-size: 4rem;
+    text-align: left;
+    margin: 0rem 2.5rem;
+ 
+
+}
+
+.text5{
+    font-size: 3.5rem;
+    text-align: left;
+    margin: 0rem 2.5rem;
+
+}
+
+.left-box{
+    background-color:white;
+    border-radius: 35px;
+    margin: 0rem 1.25rem;
+}
+
+.right-box{
+    background-color:#121212;
+    border-radius: 35px;
+    margin: 0rem 1.25rem;
+}
