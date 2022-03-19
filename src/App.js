@@ -9,7 +9,10 @@ import { Routes, Route } from "react-router-dom";
 function App() {
   return(
   	<div className="App">
-	  	<ColorPage/>
+  		<Routes>
+	  		<Route path="/" exact element={<ColorPage/>} />
+	  		<Route path="register" exact element={<RegisterPage/>} />
+	  	</Routes>
 	 </div>
 
   );
