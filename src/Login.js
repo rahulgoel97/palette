@@ -14,7 +14,7 @@ function RegisterPage() {
   const passwordRef = useRef()
 
   // Get signUp function from the auth context
-  const { signUp } = useAuth()
+  const { signIn } = useAuth()
 
   const navigate = useNavigate()
 
@@ -27,7 +27,7 @@ function RegisterPage() {
     const password = passwordRef.current.value
 
     // Calls 'signUp' function from the context
-    const { error } = await signUp({email, password})
+    const { error } = await signIn({email, password})
 
     if (error) {
     	alert('error signing in')
@@ -51,7 +51,7 @@ function RegisterPage() {
 
 
                 <div className="register-text"> 
-                                                      Register
+                                                      Login
                 </div> 
 
 
@@ -82,8 +82,17 @@ function RegisterPage() {
 				                  <br />
 				    </div>
 
-                  <button className="submit-button" type="submit">Sign up</button>
+                  <button className="submit-button" type="submit">Sign In</button>
+
+                  
                 </form>
+
+                <Link to="/register">
+                      <p className="sign-up-prompt"> Don't have an account? Sign up here </p>
+
+                  </Link>
+                  <br/>
+                  <br/>
           
         </div>
 

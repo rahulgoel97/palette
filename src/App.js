@@ -4,15 +4,24 @@ import { SketchPicker } from 'react-color';
 import './App.css';
 import TextCascade from './TextCascade';
 import ColorPage from './ColorPage.js';
-import RegisterPage from './RegisterPage.js'
+import RegisterPage from './RegisterPage.js';
+import Login from './Login.js'
 import { Routes, Route } from "react-router-dom";
+import { AuthProvider } from './contexts/Auth';
+
+
 function App() {
   return(
   	<div className="App">
-  		<Routes>
-	  		<Route path="/" exact element={<ColorPage/>} />
-	  		<Route path="register" exact element={<RegisterPage/>} />
-	  	</Routes>
+  		<AuthProvider>
+  			<Routes>
+  			
+	  				<Route path="/" exact element={<ColorPage/>} />
+	  				<Route path="login" exact element={<Login/>} />
+	  				<Route path="register" exact element={<RegisterPage/>} />
+	  		
+	  		</Routes>
+	  	</AuthProvider>
 	 </div>
 
   );

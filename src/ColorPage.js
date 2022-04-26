@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { SketchPicker } from 'react-color';
 import './App.css';
 import TextCascade from './TextCascade';
+import NavBar from './NavBar';
 
 function ColorPage() {
 
@@ -61,7 +62,7 @@ const handleSecondaryInvert = () =>
   return (
     <div className="App">
 
-        <div className="title"> 🎨 Palette </div>
+        <NavBar/>
 
               <div className="flex-grid">
 
